@@ -1,0 +1,84 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        display: flex;
+        width: 100%;
+        height: 1135px;
+        flex-direction: column;
+    }
+    
+    .item-1-navbar {
+        display: flex;
+        width: 100%;
+        height: 35px;
+        border-bottom: solid 0.5px cornsilk;
+        margin-left: 50px;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+    }
+    
+    .item-2-titleBody {
+        font-style: inherit;
+        display: flex;
+        width: 100%;
+        height: 200px;
+        justify-content: space-between;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .item-1-mainBody {
+        display: flex;
+        width: 100%;
+        height: 600px;
+    }
+    
+    .item-2-footor {
+        display: flex;
+        width: 100%;
+        height: 300px;
+        background-color: black;
+    }
+    
+    .mainPartOne {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+    
+    .mainPartTwo {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(172, 38, 38);
+        justify-content: space-evenly;
+        flex-direction: column;
+        justify-items: center;
+    }
+    
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 30px;
+    }
+    
+    a {
+        font-size: 18px;
+        color: black;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    
+    .item-2-titleBody h1 {
+        font-size: 48px;
+        margin-left: 300px;
+    }

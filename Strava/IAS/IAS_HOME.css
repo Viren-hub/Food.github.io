@@ -1,0 +1,110 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+
+/* ################################### Main-container ###########################################*/
+
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 620px;
+    background-image: url('https://www.wallpapertip.com/wmimgs/16-168366_cool-cycling-background-cycling-4k.jpg');
+    background-size: 100% 620px;
+    background-repeat: no-repeat;
+}
+
+
+/* ################################### Navbar Section ##########################################*/
+
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 50%;
+    height: 100px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 0px;
+    margin-left: 30px;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar li {
+    display: flex;
+    font-family: 'Times New Roman', serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 16px;
+    color: rgb(255, 255, 254);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.navbar li:hover {
+    border-radius: 10px;
+    color: rgb(90, 192, 233);
+    border-radius: 3px;
+    padding: 1px;
+    box-sizing: border-box;
+    box-shadow: 2px 5px 8px 3px #502a2a;
+}
+
+
+/* ################################ Body container ######################################*/
+
+.body-section {
+    display: flex;
+    width: 100%;
+    height: 620px;
+}
+
+.body-section .event-section {
+    width: 400px;
+    height: 200px;
+    margin-top: 300px;
+    margin-left: 160px;
+    border-radius: 3px;
+    padding: 1px;
+    box-shadow: 2px 5px 8px 3px #141414;
+    bottom: 120px;
+}
+
+.body-section .event-section h4 {
+    opacity: 0;
+}
+
+.body-section .event-section :hover {
+    opacity: 1;
+}
+
+.body-section .event-section:hover {
+    transition: all 1s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 1s ease-out;
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    border: 1px solid #f2f8f9;
+}

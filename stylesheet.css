@@ -1,0 +1,26 @@
+.mainclass {
+    background-color: aliceblue;
+}
+
+.topnav {}
+
+.home {
+    color: black;
+    font-size: large;
+    font-weight: 100;
+}
+
+.news {
+    color: black;
+    margin-left: 60px;
+}
+
+.contact {
+    margin-left: 60px;
+    color: black;
+}
+
+.about {
+    margin-left: 60px;
+    color: black;
+}

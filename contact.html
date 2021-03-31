@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="http://indoathleticsociety.com/sites/default/files/LOGO_0.png" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>Contact</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        
+        body {
+            background: url("https://wallpapercave.com/wp/L7INahK.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .contact-info {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+        
+        #contact-section {
+            height: 100%;
+            width: 100%;
+            padding-bottom: 2%;
+        }
+        
+        #contact-section .contact-info h2 {
+            /* display: flex;
+    align-items: center; */
+            text-align: center;
+            text-decoration: none;
+            text-underline-position: under;
+            color: darkgrey;
+            letter-spacing: 2px;
+            font-size: 50px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        #contact-section .contact-info p {
+            width: 70%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 3%;
+            color: darkgrey;
+            margin-top: 30px;
+            letter-spacing: 2px;
+            font-size: 30px;
+        }
+        
+        .contact-form i.fa {
+            /* display: flex;
+    flex-direction: column; */
+            width: 50px;
+            font-size: 22px;
+            padding: 3%;
+            background-color: #fff;
+            border-radius: 80%;
+            margin: 2%;
+            border-radius: 80%;
+            cursor: pointer;
+            border: 2px solid rgb(190, 190, 190);
+            color: #000;
+            filter: grayscale(1);
+            transition: .3s ease filter;
+        }
+        
+        .contact-form i.fa:hover {
+            cursor: pointer;
+            border: 2px solid #e6e4dd;
+            color: #e6e4dd;
+            filter: grayscale(0);
+        }
+        
+        .contact-form {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        
+        .form-info {
+            font-size: 20px;
+            font-style: italic;
+            color: rgb(190, 190, 190);
+            letter-spacing: 2px;
+            overflow: hidden;
+        }
+        
+        form {
+            height: 400px;
+        }
+        
+        input {
+            padding: 10px;
+            margin: 10px;
+            width: 50%;
+            background-color: (136, 133, 133, 0.5);
+            color: rgba(136, 133, 133, 0.5);
+            border: none;
+            outline: none;
+        }
+        
+        input::placeholder {
+            color: rgba(12, 11, 11, 0.897);
+        }
+        
+        textarea {
+            padding: 10px;
+            margin: 10px;
+            width: 50%;
+            height: 30%;
+            background-color: rgba(136, 133, 133, 0.5);
+            color: #fff;
+            border: none;
+            outline: none;
+            overflow: hidden;
+        }
+        
+        textarea::placeholder {
+            color: #fff;
+        }
+        
+        .submit {
+            width: 50%;
+            background: none;
+            padding: 4px;
+            outline: none;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            height: 33px;
+            text-align: center;
+            cursor: pointer;
+            margin-left: 1%;
+            border: 2px solid rgb(190, 190, 190);
+            color: rgb(190, 190, 190);
+            border-radius: 20px;
+            cursor: pointer;
+            transition-duration: 0.3s ease-in;
+            transition-property: background;
+        }
+        
+        .submit:hover {
+            background: #0582E3;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="contact-section">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Email Us and keep up date with our latest news</p>
+            <div class="contact-form">
+                <!-- first section -->
+                <div>
+                    <i class="fa fa-map-marker"></i><span class="form-info">Pune city India</span><br>
+                    <i class="fa fa-envelope"></i><span class="form-info">Contact@email.com</span><br>
+                    <i class="fa fa-phone-square"></i><span class="form-info">+91-1234567890</span><br>
+                    <i class="fa fa-clock-o"></i><span class="form-info">Mon-Fri 8:00am to 5:00pm</span>
+                </div>
+                <!-- ***********************2nd section************************************** -->
+                <div>
+                    <form>
+                        <input id="fname" type="text" placeholder="your Name" required>
+                        <input id="lname" type="text" placeholder="Last Name" required>
+                        <input id="email" type="Email" placeholder="Email" required>
+                        <input type="text" placeholder="Subject of this message" required>
+                        <textarea name="Message" placeholder="Message" rows="5" required></textarea>
+                        <button id="btn" class="submit">Send Message</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+
+</html>
