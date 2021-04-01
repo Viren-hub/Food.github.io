@@ -68,7 +68,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #f4511e;
+    background-color: #ffffff;
+    /* color: rgb(90, 192, 233); */
+    border-radius: 3px;
+    /* padding: 10px 20px; */
+    /* box-sizing: border-box; */
+    padding-bottom: 10px;
+    padding-top: 10px;
+    box-shadow: 2px 5px 8px 3px #f3efef;
 }
 
 .menu-icon {

@@ -85,4 +85,4 @@ let data = '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru09433
 // const x = 'virendra11
 // Gayakwad22
 // Karanji ';
-console.log("23virendra1".match(/[a-z,0-9]$/g))
+console.log("23virendra1".match(/[a-z,0-9]/g))
