@@ -1,4 +1,4 @@
-let data = '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
+// let data = '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
 // for (let i = 0; i < (data.split('+')).length; i++) {
 //     let arr = data.split('+')
 //     let subarr = arr[i].split(';')
@@ -85,4 +85,28 @@ let data = '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru09433
 // const x = 'virendra11
 // Gayakwad22
 // Karanji ';
-console.log("23virendra1".match(/[a-z,0-9]/g))
+// console.log("23virendra1".match(/[a-z,0-9]/g))
+
+
+
+
+
+
+
+
+
+
+const x = document.querySelector('.main-class')
+console.log(x)
+document.querySelectorAll('.spanHeading').forEach(el => {
+            (
+                console.log("dem") el.addEventListener('click', e => {
+                    console.log("yup")
+                    e.target.style.color = "red"
+                    console.log(e)
+                })
+            })
+
+        // .addEventListener('click', function(e) {
+        //     console.log(e, connected)
+        // })
