@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IAS | Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!--=================Font Awesome =================-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="Body-div">
+        <div class="preHeader">
+            <div class="left">
+                <span>Call US:+91-0000 00 0000</span>
+                <span><a href="#">Email: Indoinfo@gmail.com</a></span>
+
+            </div>
+            <div class="right">
+                <span><a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i></a></span>
+                <span><a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></i></a></span>
+                <span><a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i></i></a></span>
+                <span><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></span>
+            </div>
+
+        </div>
+        <div class="header">
+            <div class="inner-header">
+                <div class="logo-container">
+                    <h2>Indo-Athletic<span>-Society</span></h2>
+                </div>
+                <ul class="navbar">
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Events</li>
+                    </a>
+                    <a href="#">
+                        <li>About</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="animation">
+
+        </div>
+    </div>
+    <div class="portfolio">
+        <br><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br><br>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div>
+    <script type="text/javascript ">
+        // Menu-toggle button
+
+        $(document).ready(function() {
+            $(".menu-icon ").on("click ", function() {
+                $("inner-header ul ").toggleClass("showing ");
+            });
+        });
+
+        // Scrolling Effect
+
+        $(window).on("scroll ", function() {
+            if ($(window).scrollTop()) {
+                $('inner-header').addClass('black');
+            } else {
+                $('inner-header').removeClass('black');
+            }
+        })
+    </script>
+</body>
+
+</html>
