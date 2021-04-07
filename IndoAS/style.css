@@ -2,15 +2,24 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    font-family: 'Roboto', sans-serif;
     font-weight: lighter;
     /* clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%); */
+}
+
+.header ul {
+    padding-right: 250px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 600px;
+    background: url(https://wallpaperaccess.com/full/480568.jpg) no-repeat 50% 50%;
 }
 
 header {
     width: 100%;
     height: 100vh;
-    background: url(https://wallpaperaccess.com/full/480568.jpg) no-repeat 50% 50%;
+    /* background: url(https://wallpaperaccess.com/full/480568.jpg) no-repeat 50% 50%; */
     background-size: cover;
 }
 
@@ -22,6 +31,11 @@ header {
     line-height: 30px;
     text-align: center;
 }
+
+
+/* .header img {
+    padding-right: 100px;
+} */
 
 .logo {
     line-height: 60px;
@@ -41,22 +55,24 @@ nav {
 
 nav ul {
     line-height: 60px;
+    position: relative;
     list-style: none;
-    background: rgba(0, 0, 0, 0);
+    /* background: rgba(0, 0, 0, 0); */
     overflow: hidden;
     color: #fff;
-    padding: 0;
+    padding: ;
     text-align: right;
     margin: 0;
-    padding-right: 20px;
+    padding-right: 1px;
     transition: 1s;
 }
 
 nav.black ul {
-    background: #000;
+    background: rgb(17, 6, 6);
 }
 
 nav ul li {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: inline-block;
     padding: 15px 40px;
 }
@@ -67,18 +83,19 @@ nav ul li a {
     font-size: 16px;
 }
 
-nav ul li a:hover {
+
+/* nav ul li a:hover {
     background-color: #ffffff;
-    /* color: rgb(90, 192, 233); */
+    color: rgb(90, 192, 233);
     border-radius: 3px;
-    /* padding: 10px 20px; */
-    /* box-sizing: border-box; */
+    padding: 10px 20px;
+    box-sizing: border-box;
     padding-bottom: 10px;
     padding-top: 10px;
     box-shadow: 2px 5px 8px 3px #f3efef;
-}
+} */
 
-.menu-icon {
+*/ .menu-icon {
     line-height: 60px;
     width: 100%;
     background: #000;
