@@ -1,0 +1,21 @@
+[{
+    "Name": "Carrots",
+    "price": 40,
+    "Avalabiity": "40"
+
+}, {
+    "Name": "Capcicum",
+    "price": 80,
+    "Avalabiity": "50"
+
+}, {
+    "Name": "Flower",
+    "price": 50,
+    "Avalabiity": "60"
+
+}, {
+    "Name": "Ladyfinger",
+    "price": 12,
+    "Avalabiity": "70"
+
+}]
