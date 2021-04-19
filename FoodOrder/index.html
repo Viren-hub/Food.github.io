@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FarmaFood</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!--=========================Font Awasome Plugin==========================-->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body onload="ShowVeg()">
+    <main>
+        <H1>FarmaFood</H1><br>
+
+        <div class="buyer" id="buyer">
+
+        </div>
+
+        <div id="seller" class="seller js">
+            <div class="seller-img" id="4">
+                <div class="details">
+                    <h3 id="name1"></h3>
+                    <h5 id="price1">
+                        </h>
+                </div>
+
+            </div>
+
+        </div>l̥
+
+        <div class="insert-stock">
+            <form action="">
+                <h3>Insert New Item</h3><br>
+                <Label>ID:   </Label><input id="id" type="text"><br><br>
+                <Label>Name: </Label><input id="name" type="text"><br><br>
+                <Label>Price:<input type="text" id="price"><br><br>
+                <Label>Quantity:  </Label><input id="quantity" type="text"><br><br>
+                <Label>Image Path:  </Label><input id="image" type="text"><br><br>
+                <Label>Category:  </Label>
+                <input type="radio" id="veg" name="gender" value="veg">
+                <label for="veg">Vegitables</label>
+                <input type="radio" id="fruits" name="gender" value="fruits">
+                <label for="fruits">Fruits</label><br><br>
+
+                <input class="btn" type="reset" value="Reset">
+                <button class="btn" onclick="addStock()"> Add Item</button><br>
+            </form>
+
+        </div>
+        <div class="cart-item" id="cart-item">
+            <h3>cart_item</h3>
+        </div>
+    </main>
+
+    <script src="order.js"></script>
+
+</body>
+
+</html>
