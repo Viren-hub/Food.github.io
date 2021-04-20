@@ -100,10 +100,10 @@
         height: 300px;
     }
     
-    #price {
-        /* text-align: center; */
-    }
-    
+    /* #price {
+        /* text-align: center; 
+    }*/
+     
     .btn {
         padding: 05px;
         border-radius: 5px;
