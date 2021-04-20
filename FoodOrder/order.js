@@ -49,7 +49,8 @@ UpdateItemList = () => {
     
             <div class="sub-img">
                 <h3>Name: ${element.name}</h3>
-                <h3>Price: RS ${element.price}per Kg </h3>
+                <h3>Price: RS ${element.price}per Kg </h3><br>
+                <label>Quantity</label>
                 <input type="number" value="${element.quantity}" id=addQuantity${element.id}>
                 <input class="btn" type="button" id="buy" value="Update Stock" onclick="addQty(${element.id})" /></br>
             </div>
@@ -81,8 +82,8 @@ UpdateItemList = () => {
 
 
 function reduceQty(id) {
+    alert("connected")
     let buyQty = document.getElementById(`buyQuantity${id}`).value;
-    console.log(buyQty)
     let allVeg = localStorage.getItem ? JSON.parse(localStorage.getItem("veg")) : []
     let product = allVeg.filter(ele => ele.id == id)
     console.log("reduceQty=====", typeof(product[0].quantity), "buyqty==", buyQty, "id===", id)
@@ -95,7 +96,7 @@ function addQty(id) {
     let buyQty = document.getElementById(`addQuantity${id}`).value
     let allVeg = localStorage.getItem ? JSON.parse(localStorage.getItem("veg")) : []
     let product = allVeg.filter(ele => ele.id == id)
-    buyQty > 0 ? product[0].quantity = parseInt(product[0].quantity) + +buyQty : alert(`please add quatity greater than 0`)
+    buyQty > 0 ? product[0].quantity = parseInt(product[0].quantity) + (+buyQty) : alert(`please add quatity greater than 0`)
     localStorage.setItem("veg", JSON.stringify(allVeg));
     ShowVeg();
 }
