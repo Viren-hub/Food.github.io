@@ -68,7 +68,6 @@ UpdateItemList = () => {
 //     allVeg.forEach(element => {
 //             showAll += `<div class="images" id="${element.id}">
 //         <img src="${element.Image}" alt="Image">
-
 //             <div class="sub-img">
 //                 <h3>Name: ${element.name}</h3>
 //                 <h3>Price: RS ${element.price}per Kg </h3>
@@ -82,7 +81,7 @@ UpdateItemList = () => {
 
 
 function reduceQty(id) {
-    alert("connected")
+    var arr = [];
     let buyQty = document.getElementById(`buyQuantity${id}`).value;
     let allVeg = localStorage.getItem ? JSON.parse(localStorage.getItem("veg")) : []
     let product = allVeg.filter(ele => ele.id == id)
