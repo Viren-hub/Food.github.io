@@ -10,14 +10,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./CSS/style.css">
     <!--=========================Font Awasome Plugin==========================-->
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
 
 </head>
 
 <body onload="ShowVeg()">
     <main>
-        <H1>FarmaFood</H1><br>
 
+        <H1>FarmaFood</H1><br>
+        <span><h4>Search</h4><input  id="inpt" type="text"><button id="search" onclick="search()" class="btn">Search</button></span>
+        <div class="cart-item" id="cart-item">
+
+            <div id="payment" class="payment">
+
+            </div>
+
+        </div>
         <div class="buyer" id="buyer">
 
         </div>
@@ -53,10 +61,11 @@
             </form>
 
         </div>
-        <div class="cart-item" id="cart-item">
-            <h3>cart_item</h3>
-        </div>
+
     </main>
+
     <script src="./Js/order.js"></script>
+
+</body>
 
 </html>
