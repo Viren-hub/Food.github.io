@@ -29,7 +29,7 @@ ShowVeg = () => {
                 <p>Price: RS ${element.price}per Kg </p>
                 <input type="number" value="" id="buyQuantity${element.id}">
                 <p> Aval Stock :${element.quantity} Kg</6>
-                <input class="btn" type="button" id="buy" value="Add Cart" onclick="reduceQty(${element.id})" />
+                <input class="btn" type="button" id="buy" value="Add-Cart" onclick="reduceQty(${element.id})" />
             </div>
         </div>`
         }
