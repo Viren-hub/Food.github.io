@@ -1,3 +1,18 @@
+//========================= for Html Header ===================================//
+function stickyMenu() {
+    var sticky = document.getElementById("sticky");
+    if (window.pageYOffset > 220) {
+        sticky.classList.add('sticky');
+
+    } else {
+        sticky.classList.remove('sticky');
+
+    }
+}
+window.onscroll = function() {
+    stickyMenu();
+}
+
 let allVeg = localStorage.getItem("veg") ? JSON.parse(localStorage.getItem("veg")) : []
 var arr = [];
 var product = [];
@@ -37,6 +52,9 @@ function search() {
 }
 //=========================== Inserting new Stock ==================================//
 function addStock() {
+    if ((document.getElementById("veg").checked == true)) {
+        alert("yup")
+    }
     let data = {
         "id": document.getElementById("id").value,
         "name": document.getElementById("name").value,
