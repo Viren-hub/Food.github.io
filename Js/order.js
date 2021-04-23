@@ -47,7 +47,7 @@ function search() {
             </div>
         </div>
     </div>`
-    document.getElementById("cart-item").innerHTML = showAll;
+    document.getElementById("serched").innerHTML = showAll;
 
 }
 //=========================== Inserting new Stock ==================================//
