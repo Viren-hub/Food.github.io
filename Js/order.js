@@ -25,7 +25,7 @@ function search() {
     showAll += `<div class="outer-div">
     <div class="innerItem">
         <div class="upper-cnt">
-            <p>GET 20% OFF </p>
+            <p>GET 10% OFF </p>
         </div>
         <div class="img-cnt">
             <img src="${data.Image}" alt="onion" height="140" width="200">
@@ -39,10 +39,11 @@ function search() {
         <div class="add-info">
             
             <div class="qty-cnt">
+            <span class="spn-2"><p class="para"> Stock Avl: </p>&nbsp; ${data.quantity}.00 Kg </span>
                 <span class="spn-3"><input type="text" style="width: 50px;" value="Qty"> 
                 <input type="text" style="width: 40px;">
                 <br>
-                <button class="btncart">Add Cart</button></span>
+                <button type="button" onClick="reduceQty(${data.id})" class="btncart" >Add Cart</button></span>
 
             </div>
         </div>
@@ -52,9 +53,7 @@ function search() {
 }
 //=========================== Inserting new Stock ==================================//
 function addStock() {
-    if ((document.getElementById("veg").checked == true)) {
-        alert("yup")
-    }
+
     let data = {
         "id": document.getElementById("id").value,
         "name": document.getElementById("name").value,
@@ -76,40 +75,72 @@ ShowVeg = () => {
 
         allVeg.forEach(element => {
             if ((+element.quantity) > 0) {
-                showAll += `<div class="images" id="${element.id}">
-            <img src="${element.Image}" alt="Image">
-    
-            <div class="sub-img">
-                <p>Name: ${element.name}</p>
-                <p>Price: RS ${element.price}per Kg </p>
-                <input type="number" value="" id="buyQuantity${element.id}">
-                <p> Aval Stock :${element.quantity} Kg</6>
-                <input class="btn" type="button" id="buy" value="AddCart" onclick="reduceQty(${element.id})" />
-            </div>
-        </div>`
+                showAll += `<div class="outer-div">
+                <div class="innerItem">
+                    <div class="upper-cnt">
+                        <p>GET 10% OFF </p>
+                    </div>
+                    <div class="img-cnt">
+                        <img src="${element.Image}" alt="onion" height="140" width="200">
+                        <span class="spn-1"></span>
+                    </div>
+                    <div class="info-cnt">
+                        <h5 style="margin-left: 10px;">Fresho</h5>
+                        <h3 style="margin-left: 10px;">${element.name}</h3><br>
+                        <input class="inp-1" type="button" name="" value="1 kg-Rs${element.price}.00">
+                    </div>
+                    <div class="add-info">
+                        <span class="spn-2"><p class="para"> Stock Avl: </p>&nbsp; ${element.quantity}.00 Kg </span>
+                        <div class="qty-cnt">
+                            <span class="spn-3"><input type="text" style="width: 50px;" value="Qty"> 
+                            <input type="text" id="buyQuantity${element.id}" style="width: 40px;">
+                            <button class="btncart" onclick="reduceQty(${element.id})">Add Cart</button></span>
+                           
+                        </div>
+                    </div>
+                </div>  
+                   
+                </div> `
             }
         });
+
         document.getElementById("buyer").innerHTML = showAll;
         UpdateItemList();
     }
     //============================ Update stock HTML Templete ================================//
 UpdateItemList = () => {
+
         let allVeg = localStorage.getItem ? JSON.parse(localStorage.getItem("veg")) : []
         let showAll = ""
         let obj = allVeg.find(e => e.name == "test2")
         allVeg.forEach(element => {
 
-            showAll += `<div class="images" id="${element.id}">
-        <img src="${element.Image}" alt="Image">
-    
-            <div class="sub-img">
-                <h3>Name: ${element.name}</h3>
-                <h3>Price: RS ${element.price}per Kg </h3><br>
-                <label>Quantity</label>
-                <input type="number" value="${element.quantity}" id=addQuantity${element.id}>
-                <input class="btn" type="button" id="buy" value="Update Stock" onclick="addQty(${element.id})" /></br>
-            </div>
-        </div>`
+            showAll += `<div class="outer-div">
+            <div class="innerItem">
+                <div class="upper-cnt">
+                
+                </div>
+                <div class="img-cnt">
+                    <img src="${element.Image}" alt="onion" height="140" width="200">
+                    <span class="spn-1"></span>
+                </div>
+                <div class="info-cnt">
+                    <h5 style="margin-left: 10px;">Fresho</h5>
+                    <h3 style="margin-left: 10px;">${element.name}</h3><br>
+                    <input class="inp-1" type="button" name="" value="1 kg-Rs${element.price}.00">
+                </div>
+                <div class="add-info">
+                    <span class="spn-2"><p class="para"> Stock Avl: </p>&nbsp; ${element.quantity}.00 Kg </span>
+                    <div class="qty-cnt">
+                        <span class="spn-3"><input type="text" style="width: 50px;" value="Qty"> 
+                        <input type="text" id="addQuantity${element.id}" style="width: 40px;">
+                        <button class="btncart" onclick="addQty(${element.id})">Update Stock</button></span>
+                       
+                    </div>
+                </div>
+            </div>  
+               
+            </div>`
 
         });
 
