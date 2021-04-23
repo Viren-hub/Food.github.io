@@ -27,23 +27,49 @@
             </div>
 
         </div>
-        <h3>Insert New Item</h3><br>
-        <Label>ID:   </Label><input id="id" type="text"><br><br>
-        <Label>Name: </Label><input id="name" type="text"><br><br>
-        <Label>Price:<input type="text" id="price"><br><br>
-            <Label>Quantity:  </Label><input id="quantity" type="text"><br><br>
-        <Label>Image Path:  </Label><input id="image" type="text"><br><br>
-        <Label>Category:  </Label>
-        <input type="radio" id="veg" name="gender" value="veg">
-        <label for="veg">Vegitables</label>
-        <input type="radio" id="fruits" name="gender" value="fruits">
-        <label for="fruits">Fruits</label><br><br>
-
-        <input class="btn" type="reset" value="Reset">
-        <input type="button" value="Add Item" class="btn" onclick="addStock()"> </button><br>
-        </form>
-
+        <div class="insert-stock">
+            <div class="main"><br><br>       
+                 <h1>Insert New Item</h1>
+            <form action="">
+                <div>
+                    <h2 class="id">Id</h2>
+                    <input class="ass" type="text" id="id">
+                    <h2 class="name">Name</h2>
+                    <input class="ass" type="text" id="name">
+                    <h2 class="price">Price</h2>
+                    <input class="ass" type="text" id="price">
+                    <h2 class="quantity">Quantity</h2>
+                    <input class="ass" type="text" id="quantity">
+                    <h2 class="img">Image Path</h2>
+                    <input class="ass" type="text" id="img">
+    
+                    </div>
+                    <h2 id="veg" name="gender" value="veg" style="width: 20px;">Category 
+                    <label class="radio">
+                        <input class="r1" type="radio" >
+                        <span class="checkmark">Vegetables
+                        
+                    </span>
+                
+                    </label>
+                    <label class="radio">
+                        <input class="r2" type="radio" >
+                        <span class="checkmark">
+                        Fruits
+                    </span></td>
+                    </label><br><br></h2>
+                <input class="button" type="reset" value="Reset">
+                    <button class="button" onclick="addStock()"> Add Item</button><br>
+                </div>
+              </form>
+            </div>
+            <div class="cart-item" id="cart-item">
+                <h3>cart_item</h3>
+            </div>
+        </main>
         </div>
+    </div>
+    
         <script src="/Js/order.js" async defer></script>
     </body>
 

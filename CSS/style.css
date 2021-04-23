@@ -408,5 +408,98 @@
     /*=======================Insert container By appu===========================*/
     
     .insert-stock {
+        height: auto;
+        width: auto;
         justify-content: center;
+        text-align: center;
+        padding: 20px;
+        color:black;
+        text-align: center;
+    }
+    .main{
+        background-color:#9e9e9ea8; ;
+        width: 610px;
+        margin: auto;
+    }
+    form{
+        padding: 10px;
+    }
+    .id{
+        margin-left: 0px;
+        margin-top: 30px;
+        width: 125px;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .name{
+        margin-left: 0px;
+        margin-top: 30px;
+        width: 125px;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .price{
+        margin-left: 0px;
+        margin-top: 30px;
+        width: 125px;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .quantity{
+        margin-left: 0px;
+        margin-top: 30px;
+        width: 125px;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .img{
+        margin-left: 0px;
+        margin-top: 30px;
+        width: 125px;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .ass{
+        position: relative;
+        left: 85px;
+        top: -46px;
+        line-height: 40px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+        width: 288px;
+    }
+    #veg{
+        margin-left: 20px;
+        color: black;
+        font-size: 25px;
+    }
+    .radio{
+        display: inline-flex;
+        padding-right: 70px;
+        font-size: 25px;
+        font-weight: 700;
+        margin-left: 155px;
+        margin-right: -50px;
+        margin-top: 15px;
+        color: black;
+    }
+    .radio input{
+        width: 60px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        outline: none;
+    
+    }
+    .button{
+        padding: 21px 105px;
+        border-radius:6px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .cart-item {
+        background-color: pink;
+        width: 100%;
+        height: 200px;
     }
