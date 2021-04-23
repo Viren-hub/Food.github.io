@@ -394,12 +394,6 @@
         padding: 20px;
     }
     
-    .cart-item {
-        flex-direction: row;
-        width: 100%;
-        height: auto;
-    }
-    
     .payment {
         flex-direction: row;
         width: 100%;
@@ -413,53 +407,62 @@
         justify-content: center;
         text-align: center;
         padding: 20px;
-        color:black;
+        color: black;
         text-align: center;
     }
-    .main{
-        background-color:#9e9e9ea8; ;
+    
+    .main {
+        background-color: #9e9e9ea8;
+        ;
         width: 610px;
         margin: auto;
     }
-    form{
+    
+    form {
         padding: 10px;
     }
-    .id{
+    
+    .id {
         margin-left: 0px;
         margin-top: 30px;
         width: 125px;
         font-size: 25px;
         font-weight: 700;
     }
-    .name{
+    
+    .name {
         margin-left: 0px;
         margin-top: 30px;
         width: 125px;
         font-size: 25px;
         font-weight: 700;
     }
-    .price{
+    
+    .price {
         margin-left: 0px;
         margin-top: 30px;
         width: 125px;
         font-size: 25px;
         font-weight: 700;
     }
-    .quantity{
+    
+    .quantity {
         margin-left: 0px;
         margin-top: 30px;
         width: 125px;
         font-size: 25px;
         font-weight: 700;
     }
-    .img{
+    
+    .img {
         margin-left: 0px;
         margin-top: 30px;
         width: 125px;
         font-size: 25px;
         font-weight: 700;
     }
-    .ass{
+    
+    .ass {
         position: relative;
         left: 85px;
         top: -46px;
@@ -469,12 +472,14 @@
         font-size: 16px;
         width: 288px;
     }
-    #veg{
+    
+    #veg {
         margin-left: 20px;
         color: black;
         font-size: 25px;
     }
-    .radio{
+    
+    .radio {
         display: inline-flex;
         padding-right: 70px;
         font-size: 25px;
@@ -484,22 +489,23 @@
         margin-top: 15px;
         color: black;
     }
-    .radio input{
+    
+    .radio input {
         width: 60px;
         height: 20px;
         border-radius: 50%;
         cursor: pointer;
         outline: none;
-    
     }
-    .button{
+    
+    .button {
         padding: 21px 105px;
-        border-radius:6px;
+        border-radius: 6px;
         font-size: 20px;
         font-weight: bold;
     }
+    
     .cart-item {
-        background-color: pink;
         width: 100%;
-        height: 200px;
+        height: auto;
     }
