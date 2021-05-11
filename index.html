@@ -9,45 +9,33 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--=========================Font Awasome Plugin==========================-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
 
 </head>
 
 <body onload="ShowVeg()">
-    <div class="header">
-        <div class="page-title">Fresh Vegetables & Fruits</div>
-    </div>
-    <div class="menu" id="sticky">
-        <ul class="menu-ul">
-            <a href="#" class="a-menu">
-                <li>HOME</li>
-            </a>
-            <a href="#" class="a-menu">
-                <li>DEALS</li>
-            </a>
-            <a href="admin.html" class="a-menu">
-                <li>ADMIN</li>
-            </a>
-            <!-- <a href="#" class="a-menu"><li>cart</li></a> -->
-        </ul>
-        <div class="search-box">
-            <form>
-                <input id="inpt" type="text" placeholder=" Type to Search" name="search" class="search-input" />
-                <i id="search" onclick="search()" class="fa fa-search" onclick=""></i>
-                <!-- <i class="fa fa-shopping-cart"></i> -->
-        </div>
-        <button class="cartBtn" id="cart-btn">cart</button>
-    </div>
-    </form>
-    <!-- <div class="shopping-cart">
-            <i class="fa fa-shopping-cart"></i>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Features</a>
+                <a class="nav-item nav-link" href="#">Pricing</a>
+                <a class="nav-item nav-link disabled" href="#">Disabled</a>
             </div>
-    -->
-    </div>
+        </div>
+    </nav>
     <main>
 
-        <H1>FarmaFood</H1><br>
         <!-- <button class="btn" onclick="se">Search</button></span> -->
         <div class="serched" id="serched">
 
@@ -69,8 +57,27 @@
         </div>
 
         <br><br>
-        <div class="cart-item" id="cart-item">
+        <div class="container" id="cart-item">
 
+
+            <h3>Insert New Item</h3><br>
+            <Label>ID:   </Label><input id="id" type="text"><br><br>
+            <Label>Name: </Label><input id="name" type="text"><br><br>
+            <Label>Price:<input type="text" id="price"><br><br>
+            <Label>Quantity:  </Label><input id="quantity" type="text"><br><br>
+            <Label>Image Path:  </Label><input id="image" type="text"><br><br>
+            <Label>Category:  </Label>
+            <input type="radio" id="veg" name="gender" value="veg">
+            <label for="veg">Vegitables</label>
+            <input type="radio" id="fruits" name="gender" value="fruits">
+            <label for="fruits">Fruits</label><br><br>
+
+            <input class="btn" type="reset" value="Reset">
+            <input type="button" value="Add Item" class="btn" onclick="addStock()"> </button><br>
+            </form>
+
+        </div>
+        <script src="/Js/order.js" async defer></script>
         </div>
 
         </div>
